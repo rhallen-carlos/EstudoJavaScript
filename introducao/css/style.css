@@ -1,0 +1,55 @@
+:root{
+  --amarelo: rgb(223, 223, 152);
+  --verde: rgb(29, 226, 55);
+  --verde-hover: rgba(18, 212, 18, 0.555);
+  --branco: white;
+  --preto: black;
+  --roxo: rgba(85, 0, 141, 0.521);
+  --fonte: 'JetBrains Mono', monospace;;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte);
+}
+
+.container{
+  width: 100vw;
+  height: 100vw;
+  background: var(--amarelo);
+  padding: 30px;
+}
+
+.app{
+  border: 2px solid var(--preto) ;
+  width: 550px;
+  min-height: 300px;
+  background: var(--roxo);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+
+
+.tela{
+  background: var(--branco );
+  width: 96%;
+  height: 100px;
+  padding: 10px;
+}
+
+.troca{
+  padding: 10px 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  background: var(--verde);
+  color: var(--branco);
+  border: none;
+}
+
+.troca:hover{
+  background: var(--verde-hover);
+}
+
