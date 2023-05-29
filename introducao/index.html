@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pr-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,239 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/app.js"></script>
-  
+
   <title>Introdução JS</title>
 </head>
+
 <body>
 
-<div class="container">
+  <header class="cabecalho">
 
-  <div class="app">
-    
-    <div class="tela" id="tela">
-      <p id="troca">Texto Original!</p>
-    </div>
-  
-    <div class="botao">
-      <button class="troca" type="button" onclick="trocaTexto()">Trocar</button>
-      <button class="troca" type="button" onclick="voltaTexto()">Volta</button>
-      <button class="troca" type="button" onclick="printar()">Printar</buton>
-    </div>
-  
-  </div>
+    <h1>JavaScript</h1>
+
+    <p class="cabecalhoP">Referências <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=395s" class="cabecalhoLink"
+        target="_blank">FreeCodCamp</a></p>
+
+  </header>
+  <!--
+  <nav class="menu">
+
+  </nav>
+-->
+  <main class="conteudoPrincipal">
+
+    <section class="conteinerPadrao variaveis">
+
+      <h2>Variáveis JavaScript</h2>
+
+      <p>
+        Declaração de Variáveis em JavaScript:
+      </p>
 
 
+      <div class="codJs">
+        <pre><code>
+          /* Tipos de dados
+          undefined: algo que não foi definido.
+          null: não significa nada.
+          boolean: valor lógico(Verdadeiro ou Falso). 
+          string: palavras. 
+          symbol: valor imutavel/único.
+          number: numeros.
+          Object: pode conter vários valores.             
+          */ 
+        </code></pre>
+      </div>
 
-</div>
+      <p>Incialização de uma variável:</p>
 
-  
+      <div class="codJs">
+        <pre><code>
+            var a = 2;
+            var b = 15;
+            var c = "Olá ";
+
+            a = a + 1; //resultado 3
+            b = b + 15; //resultado 30
+            c = c + "Mundo!"; //resultado "Olá Mundo!"
+          </code></pre>
+
+      </div>
+
+      <p>Variáveis são Case Sensitivity. Recomenda-se utilizar camelCase.</p>
+      <p>Exemplo:</p>
+
+      <div class="codJs">
+        <pre><code>
+          var MEUNOME; //Errado
+
+          var meuNome; //Correto 
+        </code></pre>
+      </div>
+
+
+    </section>
+
+    <section class="conteinerPadrao matBasica">
+
+      <h2>Matemática Básica</h2>
+
+      <p>Adicionando Números:</p>
+
+      <div class="codJs">
+        <pre><code>
+          var soma = 10 + 10;
+
+          console.log(soma); // 20
+        </code></pre>
+      </div>
+
+      <p>Subtração</p>
+
+      <div class="codJs">
+        <pre><code>
+          var subitracao = 100 - 30;
+
+          console.log(subitracao); // 70
+        </code></pre>
+      </div>
+
+      <p>Multiplicação</p>
+
+      <div class="codJs">
+        <pre><code>
+          var multiplicacao = 2 * 15;
+
+          console.log(multiplicacao) // 30
+        </code></pre>
+      </div>
+
+      <p>Divisão</p>
+
+      <div class="codJs">
+        <pre><code>
+          var divisao = 15 / 3;
+
+          console.log(divisao); // 5
+        </code></pre>
+      </div>
+
+    </section>
+
+    <section class="conteinerPadrao operacaoes">
+
+      <h2>Opreções</h2>
+
+      <p>Incremento:</p>
+
+      <div class="codJs">
+        <pre><code>
+          var minhaVar = 87;
+
+          //minhaVar = minhaVar + 1; substitua esse
+          minhaVar++; // por esse
+
+          console.log(minhaVar); // 88
+        </code></pre>
+      </div>
+
+      <p>
+        Decremento:
+      </p>
+
+      <div class="codJs">
+        <pre><code>
+          var decremento = 11;
+
+          //decremento = decremento - 1; substitua esse
+
+          decremento--; //por esse
+
+          console.log(decremento); // 10
+        </code></pre>
+      </div>
+
+      <p>
+        Número Decimal:
+      </p>
+
+      <div class="codJs">
+        <pre><code>
+          var decimal = 1.52;
+
+          /*
+          * Numero que contenha qualquer sinal
+          */
+        </code></pre>
+      </div>
+
+      <p>
+        Multiplicando decimal:
+      </p>
+
+      <div class="codJs">
+        <pre><code>
+          var produto = 2.0 * 2.5;
+          
+          console.log(produto); // 5
+        </code></pre>
+      </div>
+
+      <p>Divisão:</p>
+
+      <div class="codJs">
+        <pre><code>
+          var divisao = 4.0 / 2.0;
+
+          console.log(divisao); // 2
+        </code></pre>
+      </div>
+
+      <p>Encontrar o resto:</p>
+
+      <div class="codJs">
+        <pre><code>
+          var resto = 11 % 3;
+
+          console.log(resto); 
+          
+          // 2 assim descobrindo se o 
+          //numero é impar ou par.
+          //divide o numero por 2 se for 0
+          //então é par.
+        </code></pre>
+      </div>
+
+      <p>Adição aumentada</p>
+
+      <div class="codJs">
+        <pre>
+          <code>
+            var a = 3;
+            var b = 17;
+            var c = 12;
+
+            a += 12;
+            b += 9;
+            c += c + 7;
+
+            console.log(a, b, c);
+          </code>
+        </pre>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Todos os direitos reservado a FreeCodCamp</p>
+    <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=395s">www.freecodecamp.org</a>
+  </footer>
+
 </body>
+
 </html>
